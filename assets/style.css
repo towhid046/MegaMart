@@ -1,0 +1,751 @@
+@font-face {
+    font-family: 'HK Grotesk';
+    src: url(fonts/HKGrotesk-Medium.otf);
+}
+@font-face {
+    font-family: 'HK Grotesk-regular';
+    src: url(fonts/HKGrotesk-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footerImgWrapper{
+    max-width: 1210px;
+}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'HK Grotesk', sans-serif; 
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.displayFlex{
+    display: flex;
+}
+.alignCenter{
+    align-items: center;
+}
+.alignStart{
+    align-items: flex-start;
+}
+.alignEnd{
+    align-items: flex-end;
+}
+
+.justifyCenter{
+    justify-content: center;
+}
+.justifyStart{
+    justify-content: flex-start;
+}
+.justifyEnd{
+    justify-content:flex-end ;
+}
+.justifyBetween{
+    justify-content: space-between;
+}
+.justifyEvenly{
+    justify-content: space-evenly;
+}
+
+/* Header Top CSS */
+.headerTop{
+    background: #f5f5f5;
+    padding: 12px 0;
+}
+.headerTopWelcome{
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+}
+.headerTopListItems li{
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+}
+.headerTopListItems li img{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+}
+.headerTopListItems li p{
+    color: #666;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.hTopCall{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+.line{
+    width: 1px;
+    height: 18px;
+    background: #D9D9D9;
+    margin-left: -16px;
+}
+
+/* Main Header CSS */
+.mainHeader{
+    padding: 21px 0;
+    border-bottom: 1px solid #EDEDED;;
+}
+.logo img{
+    margin-right:16px ;
+    cursor: pointer;
+}
+.headerIcon{
+    background: #f3f9fb;
+    padding: 15px 12px ;
+    border-radius: 10px;
+    width: 507px;
+    margin-right: 30px;
+}
+.manuSearchIcon{
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    align-self: center;
+}
+.headerIcon input{
+    color: #666;
+    background: none;
+    align-self: flex-start;
+    border: none;
+    outline: none;
+    font-weight: 400;    
+    line-height: 18px;
+    margin-right: 175px;
+    width: 60%;
+    align-self: center;
+}
+.manuListIcon{
+    width:24px ;
+    height: 24px;
+}
+.headerLogAndCart img{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+.headerLogAndCart a{
+    color: #666;
+    font-weight: 700;
+    line-height: 18px;
+}
+.line1{
+    width: 1px;
+    height: 24px;
+    background: #D9D9D9;
+    margin: 0 20px;
+}
+
+/* Navbar CSS */
+.navbar{
+    padding: 16px 0;
+    border-bottom: 1px solid #EDEDED;
+}
+ul.navListItems li a{
+    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 18px;
+    background: #F3F9FB;
+    padding: 9px 14px;
+    font-size: 14px;
+    color: #222;
+    font-weight: 500;
+    line-height: 18px;
+    transition: .4s;
+}
+ul.navListItems li a span {
+    margin-right: 5px;
+}
+ul.navListItems li a i{
+    color: #008ECC;
+}
+ul.navListItems li a:hover{
+    background: #008ECC;
+    color: #fff;
+}
+ul.navListItems li a:hover i{
+    color: #fff;
+}
+
+/* Hero Area CSS */
+.heroArea{
+    padding: 20px 0;
+}
+.heroArea .container{
+    background-image: url('./images/hero-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 316px;
+}
+.heroContent{
+    color: #fff;
+    padding: 40px 0 0 90px;
+}
+.heroContent h4{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.heroContent h2{
+    margin: 20px 0;
+    font-size: 63px;
+    font-weight: 700;
+    line-height: 63px;
+    text-transform: uppercase;
+}
+.heroContent h3{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.heroImage{
+    justify-content: space-between;
+}
+.heroImage{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.heroImage img{
+    display: block;
+}
+.ellipse29{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.ellipse27{
+    border-radius: 0 15px 0 0 ;
+}
+.ellipse28{
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+}
+.heroImgWatch{
+    position: absolute;
+    top:22px;
+    right: 165px;
+}
+
+/* hero area carousel CSS */
+.slick-arrow{
+    height: 63px;
+    width: 63px;
+    color: #008ECC;
+    border: none;
+    background: #F3F9FB;
+    position: absolute;
+    top: 40%;
+    border-radius: 50%;
+    transition: .2s;
+    cursor: pointer;
+    border: 5px solid #fff;
+}
+.slick-prev{
+    left:-30px;
+    z-index: 1;
+}
+.slick-next{
+    right: -30px;
+}
+ul.slick-dots{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    bottom: 39px;
+    left: 90px;
+}
+ul.slick-dots li{
+    margin: 0;
+    padding: 0;
+}
+ul.slick-dots li button{
+    text-indent: -9999px;
+    margin: 4px;
+    border: none;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    border-radius:50% ;
+}
+.slick-arrow:hover{
+    background: #2c3454;
+    color: #fff;
+}
+ul.slick-dots li.slick-active button{
+    width: 24px;
+    border-radius: 33px;
+}
+
+/* Best Deal Section CSS */
+.bestDealSection{
+    padding: 120px 0;
+}
+.bestDealSection .container{
+}
+.w-90{
+    max-width: 90%;
+}
+.globalHeading{
+    border-bottom: 1px solid  #EDEDED ;
+}
+.globalHeading h3{
+    color: #666;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    padding-bottom: 16px;
+    border-bottom:3px solid #008ECC ;
+}
+.globalHeading h3 span{
+    color: #008ECC;
+}
+.globalHeading a{
+    color: #222;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+}
+.globalHeading a i{
+    color: #008ECC;
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+}
+.bestDealItems{
+    padding: 40px 0;
+}
+.bestDealBox{
+    border-radius: 16px;
+    border: 1px solid  #EDEDED;
+    transition: .4s;
+    cursor: pointer;
+    width: 227px;
+    height: 295px;
+}
+.bestDealBox:hover{
+    border: 1px solid #008ECC ;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 6px 13px 0px rgba(0, 0, 0, 0.05), 0px 24px 24px 0px rgba(0, 0, 0, 0.04), 0px 54px 33px 0px rgba(0, 0, 0, 0.03), 0px 97px 39px 0px rgba(0, 0, 0, 0.01), 0px 151px 42px 0px rgba(0, 0, 0, 0.00);
+}
+.phoneImg{
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F5;
+    border-radius: 16px 16px 0 0;
+}
+.phoneImg img{
+    padding: 15px 72px;
+}
+.phoneOffer{
+    width: 51px;
+    height: 53px;
+    background:  #008ECC;
+    border-radius: 0px 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.phoneBoxContent{
+    background: #fff;
+    padding: 12px;
+    border-radius: 0 0 15px 15px ;
+    color: #222;
+}
+.phoneBoxContent p{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.phoneBoxContent h5{
+    line-height: 18px;
+    font-size: 16px;
+    border-bottom:1px solid #EDEDED ;
+    padding-bottom: 10px;
+}
+.phoneBoxContent h5 strong{
+    font-weight: 700;
+    margin-right: 10px;
+}
+.phoneBoxContent h5 span{
+    font-weight: 400;
+    text-decoration: line-through;
+}
+.phoneBoxContent h6{
+    padding-top: 10px;
+    color: #249B3E;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+/* Top Categories CSS */
+.topCategoriesSection{}
+.topCategoriesSection .container{}
+.topCategorieItems{
+    padding: 40px 0 120px 0;
+}
+.categoryBox{
+}
+.cBoxImg{
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background:#F5F5F5 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: .4s;
+    border: 1px solid #f5f5f5;
+    cursor: pointer;
+}
+.cBoxImg:hover{
+    border: 1px solid #008ECC;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 3px 7px 0px rgba(0, 0, 0, 0.05), 0px 13px 13px 0px rgba(0, 0, 0, 0.04), 0px 29px 18px 0px rgba(0, 0, 0, 0.03), 0px 52px 21px 0px rgba(0, 0, 0, 0.01), 0px 82px 23px 0px rgba(0, 0, 0, 0.00);
+}
+.cBoxText{
+    color: #222;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+}
+
+/* Electronics Brands CSS */
+.eBrandSection{
+    padding-bottom: 120px ;
+}
+.eBrandSection .container{}
+.eBrandItems{
+    padding: 40px 0 30px 0;
+}
+/* electronics barand box 1 */
+.eBrandBox1{
+    background: #313131;
+    border-radius: 16px;
+    width: 389px;    
+    height: 207px;
+}
+.ebText1{
+    align-self: center;
+    padding: 20px 0 20px 20px;
+}
+.ebText1 p{
+    padding: 10px 20px;
+    background: #494949;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    display: inline-block;
+}
+.phoneLogo1 {
+    margin: 20px 0;
+    background:#fff;
+    border-radius: 16px;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.phoneLogo1 img{
+    width: 37px;
+}
+.ebText1 h4{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 30px;
+}
+.ebImg1{
+    position: relative;
+}
+.phoneImg1{
+    position: absolute;
+    top: 12px;
+    right: 40px;
+}
+
+/* electronics barand box 2 */
+.eBrandBox2{
+    background: #fff3cc;
+    border-radius: 16px;
+    width: 389px;    
+    height: 207px;
+    
+}
+.ebText2{
+    align-self: center;
+    padding: 20px 0 20px 20px;
+}
+.ebText2 p{
+    padding: 10px 20px;
+    background: #f6de8d;
+    border-radius: 8px;
+    color: #222;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    display: inline-block;
+}
+.phoneLogo2{
+    margin: 20px 0;
+}
+.phoneLogo2 img{
+    width:114px;
+}
+.ebText2 h4{
+    font-size: 22px;
+    color: #222;
+    font-weight: 400;
+    line-height: 30px;
+}
+.ebImg2{
+    position: relative;
+}
+.phoneImg2{
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+
+/* electronics barand box 3 */
+.eBrandBox3{
+    background: #ffecdf;
+    border-radius: 16px;
+    width: 389px;    
+    height: 207px;
+}
+.ebText3{
+    align-self: center;
+    padding: 20px 0 20px 20px;
+}
+.ebText3 p{
+    padding: 10px 20px;
+    background: #ffd1b0;
+    border-radius: 8px;
+    color: #222;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    display: inline-block;
+}
+.phoneLogo3 {
+    margin: 20px 0;
+}
+.phoneLogo3 img{
+    width: 67px;
+}
+.ebText3 h4{
+    font-size: 22px;
+    color: #222;
+    font-weight: 400;
+    line-height: 30px;
+}
+.ebImg3{
+    position: relative;
+}
+.phoneImg3{
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+.tabWrapper{
+    position: relative;
+    padding-bottom: 20px;
+}
+.tabWrapper ul {
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+}
+.tabWrapper ul li button {
+    cursor: pointer;
+}
+.tabWrapper ul.slick-dots li.slick-active button{
+    width: 24px;
+    border-radius: 33px;
+    background: #008ECC;
+}
+
+/* Daily  Essentials Section CSS */
+.essentialItems{
+    padding: 40px 0 120px 0;
+}
+.eBoxImg{
+    width: 186px;
+    height: 186px;
+    border-radius: 16px;
+    background: #F5F5F5;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: .4s;
+    border: 1px solid #F5F5F5;
+    cursor: pointer;
+}
+.eBoxImg:hover{
+    border: 1px solid #008ECC;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 3px 7px 0px rgba(0, 0, 0, 0.05), 0px 13px 13px 0px rgba(0, 0, 0, 0.04), 0px 29px 18px 0px rgba(0, 0, 0, 0.03), 0px 52px 21px 0px rgba(0, 0, 0, 0.01), 0px 82px 23px 0px rgba(0, 0, 0, 0.00);
+}
+.eBoxText{
+    text-align: center;
+}
+.eBoxText p{
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 4px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.eBoxText h5{
+    color: #222;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+/* Footer Section CSS */
+.footer{
+    padding: 80px 0;
+    background: #008ECC;
+    font-family: 'HK Grotesk-regular', sans-serif;
+}
+.footerContract{
+    color: #fff;
+    margin-right: 70px;
+}
+.footerContract h2{
+    margin-bottom: 30px;
+}
+.footerContractBox h4{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.footerContractBox li{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.footerContractBox li img{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.footerContractBox li p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 2px;
+}
+.footerContractBox li p span{
+    font-weight: 600;
+}
+.downloadApp h5{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.appleAndGoogleStore img{
+    background: #fff;
+    border-radius: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.footerItemList{
+    color: #fff;
+    margin-right: 80px;
+    list-style-position: inside;
+    list-style-type: disc;
+}
+.footerItemList h3{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    padding-bottom: 16px;
+    border-bottom: 3px solid #fff;
+    margin-bottom: 25px;
+}
+.footerItemList li a{
+    font-family: 'HK Grotesk-regular', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.footer{
+    position: relative;
+}
+.footerimg1{
+    width: 230px;
+    position: absolute;
+    top: 0;
+    right:0 ;
+}
+.footerimg2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 245px;
+}
+
+/* footer bottom CSS */
+.customHr{
+    height: 1px;
+    width:100%;
+    background: #05ABF3;
+}
+.footerCopyright{
+    color: #fff;
+    font-family: 'HK Grotesk-regular', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 30px 0;
+    text-align: center;
+}
+.footerBottom{
+    background: #008ECC;
+}
